@@ -71,7 +71,8 @@ a:hover {
 }
 
 h1 {
-  color: #05939b;
+  color: #EEEEEE;
+  font-style: italic;
   font-size: 4rem;
   margin-top: 0;
   margin-bottom: 5px;
@@ -83,6 +84,7 @@ h2 {
 
 .designer {
   color: #222831;
+  font-style: italic;
 }
 
 .about-me-container {
@@ -113,7 +115,6 @@ h2 {
   margin-bottom: 5px;
   margin-right: 50px;
   display: flex;
-  justify-content: end;
 }
 
 .skills-info-title {
@@ -172,16 +173,16 @@ h2 {
 
 .projects-tabs {
   flex: 1;
-  border: 2px solid #05939b;
+  border: 4px solid #05939b;
   background-color: #05939b;
   border-radius: 8px;
-  max-width: 330px;
+  max-width: 370px;
   height: 480px;
 }
 
 .image-proj {
   border-radius: 8px;
-  max-width: 330px;
+  max-width: 370px;
   height: 350px;
   margin-bottom: 0;
   object-fit: fill;
@@ -210,6 +211,7 @@ h2 {
 
 .view-project-btn {
   text-decoration: none;
+  font-weight: bold;
   border: 1px solid #222831;
   border-radius: 8px;
   padding: 5px 5px 5px 5px;
