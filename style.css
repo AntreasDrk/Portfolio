@@ -186,7 +186,7 @@ h2 {
   max-width: 340px;
   height: 300px;
   margin-bottom: 0;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .img-icon {
