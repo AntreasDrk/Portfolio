@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #222831;
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
 #header {
@@ -31,7 +31,7 @@ body {
   margin: 0;
   justify-content: flex-start;
   font-size: 22px;
-  background-color:  #EEEEEE;
+  background-color: #eeeeee;
   padding: 10px 10px;
   height: 30px;
 }
@@ -42,11 +42,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #00ADB5;
+  color: #00adb5;
 }
 
 a:hover {
-  color: #E57C23;
+  color: #e57c23;
 }
 
 .welcome-msg {
@@ -71,7 +71,7 @@ a:hover {
 }
 
 h1 {
-  color: #EEEEEE;
+  color: #eeeeee;
   font-style: italic;
   font-size: 4rem;
   margin-top: 0;
@@ -101,7 +101,7 @@ h2 {
 }
 
 .text {
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
 .abt-me-paragraph {
@@ -135,7 +135,7 @@ h2 {
 }
 
 .icon-mark {
-  color: #E57C23;
+  color: #e57c23;
   margin-left: 10px;
 }
 
@@ -165,25 +165,26 @@ h2 {
 }
 
 .projects-tabs-container {
-  display: flex;
-  gap: 10px;
-  justify-content: space-around;
-  height: 50vh;
+  display: grid;
+  gap: 20px;
+  grid-template-rows: auto; /* 3 rows that size to fit content */
+  grid-template-columns: auto auto auto auto; /* 1 column */
+  height: 100vh;
 }
 
 .projects-tabs {
-  flex: 1;
+  margin-left: 3.5rem;
   border: 4px solid #05939b;
   background-color: #05939b;
   border-radius: 8px;
-  max-width: 370px;
-  height: 480px;
+  max-width: 340px;
+  height: 420px;
 }
 
 .image-proj {
   border-radius: 8px;
-  max-width: 370px;
-  height: 350px;
+  max-width: 340px;
+  height: 300px;
   margin-bottom: 0;
   object-fit: fill;
 }
@@ -194,22 +195,24 @@ h2 {
 
 .description-title {
   margin-top: 0;
+  margin-bottom: 5px;
   margin-left: 5px;
   color: #222831;
 }
 
 .description-text {
   margin-left: 5px;
+  margin-bottom: 10px;
   color: #222831;
   font-size: 18px;
 }
 
-.view-project{
-  margin-left: 5px;
-  margin-top: 20px;
+.view-project {
+  display: flex;
+  justify-content: space-around;
 }
 
-.view-project-btn {
+.btn {
   text-decoration: none;
   font-weight: bold;
   border: 1px solid #222831;
@@ -219,10 +222,10 @@ h2 {
   transition: background-color 0.3s;
 }
 
-.view-project-btn:hover {
+.btn:hover {
   background-color: #222831;
   outline: none;
-  color: #E57C23;
+  color: #e57c23;
 }
 
 .contact-info-title {
