@@ -87,6 +87,10 @@ h2 {
   font-style: italic;
 }
 
+#about-me {
+  display: flex;
+  flex-direction: column;
+}
 .about-me-container {
   margin-left: 50px;
   float: left;
@@ -125,8 +129,15 @@ h2 {
 }
 
 .skills-info {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  justify-content: space-evenly;
+  gap: 30px;
+  grid-template-rows: auto; /* 3 rows that size to fit content */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
+}
+
+.skills-text-container {
+  flex: 1;
 }
 
 .skills-prgph {
@@ -169,7 +180,7 @@ h2 {
 .my-projects-text {
   margin-top: 25px;
   margin-right: 50px;
-  text-align: right;
+  text-align: left;
 }
 
 .hr-with-text {
@@ -182,11 +193,11 @@ h2 {
   margin-bottom: 25px;
 }
 
-.hr-with-text::before {
+.hr-with-text::after {
   content: "";
   flex-grow: 1;
   border-bottom: 1px solid #e57c23;
-  margin-right: 10px; /* Spacing between line and text */
+  margin-left: 10px; /* Spacing between line and text */
 }
 
 .hr-with-text p {
@@ -194,8 +205,10 @@ h2 {
   white-space: nowrap; /* Prevent text from wrapping */
 }
 
+/* TODO make the grid better, maybe change the project tabs into a slider? */
 .projects-tabs-container {
   display: grid;
+  justify-content: space-evenly;
   gap: 30px;
   grid-template-rows: auto; /* 3 rows that size to fit content */
   grid-template-columns: auto auto auto auto; /* 4 columns */
@@ -203,7 +216,6 @@ h2 {
 }
 
 .projects-tabs {
-  margin-left: 3.5rem;
   border: 4px solid #05939b;
   background-color: #05939b;
   border-radius: 8px;
