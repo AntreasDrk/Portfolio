@@ -13,7 +13,7 @@ body {
   background-image: url(./assets/images/headerBackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 850px;
+  height: 950px;
   margin-bottom: 50px;
 }
 
@@ -106,31 +106,14 @@ h2 {
   color: #e57c23;
 }
 
-#about-me {
+#my-skillset {
   display: flex;
   flex-direction: column;
 }
-.about-me-container {
+.skillset-container {
   margin-left: 50px;
   float: left;
   margin-bottom: 100px;
-}
-
-.abt-me-title {
-  font-size: 3rem;
-  margin-bottom: 5px;
-  margin-right: 10px;
-  display: inline-block;
-}
-
-.text {
-  color: #eeeeee;
-}
-
-.abt-me-paragraph {
-  font-size: 20px;
-  margin-top: 10px;
-  width: 33%;
 }
 
 .skills-title {
@@ -141,7 +124,7 @@ h2 {
 }
 
 .skills-info-title {
-  color: #05939b;
+  color: #05939b !important;
   font-size: 2rem;
   display: inline-block;
   margin-bottom: 0;
@@ -294,6 +277,17 @@ h2 {
   color: #e57c23;
 }
 
+/* CONTACT INFO/ABOUT ME */
+
+.contact-me-section-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-me-items {
+  flex: 1;
+}
+
 .contact-info-title {
   color: #05939b;
   font-size: 2rem;
@@ -317,6 +311,29 @@ h2 {
   margin-left: 50px;
   margin-top: 0;
   font-size: 20px;
+}
+
+.about-me {
+  margin-left: 50px;
+  float: left;
+  margin-bottom: 100px;
+}
+
+.abt-me-title {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.text {
+  color: #eeeeee;
+}
+
+.abt-me-paragraph {
+  font-size: 20px;
+  margin-top: 10px;
+  width: 60%;
 }
 
 hr {
