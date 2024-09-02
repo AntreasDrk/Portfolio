@@ -13,7 +13,7 @@
   <body>
     <!-- Hero/Nav bar -->
     <section id="header">
-      <div class="container">
+      <div class="container unselectable">
         <nav class="nav-bar">
           <ul id="nav-elements">
             <li class="nav-list name"><a href="#header">Home</a></li>
@@ -25,16 +25,15 @@
 
         <div class="welcome-msg">
           <div id="profile-pic">
-            <img src="./assets/images/resume-pic.png" id="profile-img" loading="lazy" alt="a profile picture" />
+            <img src="./assets/images/resume-pic.png" id="profile-img" loading="lazy" class="unselectable" alt="a profile picture" />
           </div>
           <div>
-            <h1>I am Antreas</h1>
+            <h1 class="unselectable">I am Antreas</h1>
           </div>
           <div>
-            <h2 class="sub-text">an aspiring programmer and <span class="designer">designer.</span></h2>
+            <h2 class="sub-text unselectable">an aspiring programmer and <span class="designer">designer.</span></h2>
           </div>
-          <div class="arrow">
-            <img src="assets/images/arrowDown.png" alt="Scroll Down Arrow" />
+          <div class="arrow unselectable"><a href="#my-skillset"><img src="assets/images/arrowDown.png" alt="Scroll Down Arrow" /></a>
           </div>
         </div>
       </div>
@@ -42,7 +41,7 @@
     <!-- TODO MOVE ABOUT ME TO THE BOTTOM SIDE NEXT TO CONTACT ME AND SEE HOW IT LOOKS -->
     <!-- About Me -->
     <section id="my-skillset">
-      <div class="skillset-container">
+      <div class="skillset-container unselectable">
         <article id="skillset">
           <div class="skills-tab">
             <h2 class="text skills-title">Skillset</h2>
@@ -103,7 +102,7 @@
     <!-- IMPORTANT GIVE MORE EMPHASIS HERE!!! -->
     <!-- Projects -->
     <section id="projects">
-      <div class="projects-container">
+      <div class="projects-container unselectable">
         <div>
           <h2 class="text projects-title">Projects</h2>
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="icon-mark bi bi-layout-text-window" viewBox="0 0 16 16">
@@ -117,7 +116,7 @@
           <!-- MONDRIAN PROJECT  -->
           <div class="projects-tabs">
             <div class="project-image-container">
-              <img src="./assets/images/mondrianProject.png" alt="mondrian project" loading="lazy" class="image-proj" />
+              <img src="assets/images/mondrianProject.png" alt="mondrian project" loading="lazy" class="image-proj" />
             </div>
             <div class="project-description-title">
               <h3 class="text description-title">Mondrian Project</h3>
@@ -131,7 +130,7 @@
           <!-- TINDOG PROJECT  -->
           <div class="projects-tabs">
             <div class="project-image-container">
-              <img src="./assets/images/tinDogProject.png" alt="tindog project" loading="lazy" class="image-proj" />
+              <img src="assets/images/tinDogProject.png" alt="tindog project" loading="lazy" class="image-proj" />
             </div>
             <div class="project-description-title">
               <h3 class="text description-title">TinDog Project</h3>
@@ -145,7 +144,7 @@
           <!-- MOVE WITH JOY  -->
           <div class="projects-tabs">
             <div class="project-image-container">
-              <img src="./assets/images/moveItProject.png" alt="move it project" loading="lazy" class="image-proj img-icon" />
+              <img src="assets/images/moveItProject.png" alt="move it project" loading="lazy" class="image-proj img-icon" />
             </div>
             <div class="project-description-title">
               <h3 class="text description-title">Move It Project</h3>
@@ -159,7 +158,7 @@
           <!-- DICE GAME -->
           <div class="projects-tabs">
             <div class="project-image-container">
-              <img src="./assets/images/diceGame.png" alt="tindog project" loading="lazy" class="image-proj" />
+              <img src="assets/images/diceGame.png" alt="dice game project" loading="lazy" class="image-proj" />
             </div>
             <div class="project-description-title">
               <h3 class="text description-title">Dice Game Project</h3>
@@ -173,28 +172,28 @@
           <!-- DRUMKIT GAME -->
           <div class="projects-tabs">
             <div class="project-image-container">
-              <img src="./assets/images/drumKitGame.png" alt="tindog project" loading="lazy" class="image-proj" />
+              <img src="assets/images/drumKitGame.png" alt="drumkit game project" loading="lazy" class="image-proj" />
             </div>
             <div class="project-description-title">
               <h3 class="text description-title">Drumkit Game Project</h3>
             </div>
             <div class="description-text text">Buttons with sounds using JS</div>
             <div class="view-project">
-              <a href="./Projects/DrumKit Game/index.html" class="view-project btn" target="_blank">View Project</a>
+              <a href="Projects/DrumKit Game/index.html" class="view-project btn" target="_blank">View Project</a>
               <a href="https://github.com/AntreasDrk/Portfolio/tree/main/Projects/DrumKit%20Game" class="view-code btn" target="_blank">View Code</a>
             </div>
           </div>
           <!-- WEB DESIGN AGENCY -->
           <div class="projects-tabs">
             <div class="project-image-container">
-              <img src="./assets/images/webDesignAgency.png" alt="tindog project" loading="lazy" class="image-proj" />
+              <img src="assets/images/webDesignAgency.png" alt="web design agency project" loading="lazy" class="image-proj" />
             </div>
             <div class="project-description-title">
               <h3 class="text description-title">Web Design Agency Project</h3>
             </div>
             <div class="description-text text">Built a Web Design Agency (basic HTML,CSS)</div>
             <div class="view-project">
-              <a href="./Projects/Web Design Agency/index.html" class="view-project btn" target="_blank">View Project</a>
+              <a href="Projects/Web Design Agency/index.html" class="view-project btn" target="_blank">View Project</a>
               <a href="https://github.com/AntreasDrk/Portfolio/tree/main/Projects/Web%20Design%20Agency" class="view-code btn" target="_blank">View Code</a>
             </div>
           </div>
@@ -207,7 +206,7 @@
           <!-- MONDRIAN PROJECT  -->
           <div class="projects-tabs">
             <div class="project-image-container">
-              <img src="./assets/images/mondrianProject.png" alt="mondrian project" loading="lazy" class="image-proj" />
+              <img src="assets/images/mondrianProject.png" alt="mondrian project" loading="lazy" class="image-proj" />
             </div>
             <div class="project-description-title">
               <h3 class="text description-title">Mondrian Project</h3>
@@ -218,18 +217,60 @@
               <a href="https://github.com/AntreasDrk/Portfolio/tree/main/Projects/Mondrian" class="view-code btn" target="_blank">View Code</a>
             </div>
           </div>
-          <!-- TINDOG PROJECT  -->
+          <!-- THE LIBRARY  -->
           <div class="projects-tabs">
             <div class="project-image-container">
-              <img src="./assets/images/tinDogProject.png" alt="tindog project" loading="lazy" class="image-proj" />
+              <img src="assets/images/theLibrary.png" alt="the library project" loading="lazy" class="image-proj" />
             </div>
             <div class="project-description-title">
-              <h3 class="text description-title">TinDog Project</h3>
+              <h3 class="text description-title">TheLibrary Project</h3>
             </div>
-            <div class="description-text text">Built a landing page using Bootstrap</div>
+            <div class="description-text text">As the name states a personal library</div>
             <div class="view-project">
-              <a href="Projects/TinDog/index.html" class="view-project btn" target="_blank">View Project</a>
-              <a href="https://github.com/AntreasDrk/Portfolio/tree/main/Projects/TinDog" class="view-code btn" target="_blank">View Code</a>
+              <a href="My-Projects/PortofolioProjects/TheLibrary/index.html" class="view-project btn" target="_blank">View Project</a>
+              <a href="https://github.com/AntreasDrk/Portfolio/tree/main/My-Projects/PortofolioProjects/TheLibrary" class="view-code btn" target="_blank">View Code</a>
+            </div>
+          </div>
+          <!-- MYCALCULATOR -->
+          <div class="projects-tabs">
+            <div class="project-image-container">
+              <img src="assets/images/myCalculator.png" alt="calculator project" loading="lazy" class="image-proj" />
+            </div>
+            <div class="project-description-title">
+              <h3 class="text description-title">MyCalculator Project</h3>
+            </div>
+            <div class="description-text text">A basic calculator made with JS.</div>
+            <div class="view-project">
+              <a href="My-Projects/PortofolioProjects/Calculator/index.html" class="view-project btn" target="_blank">View Project</a>
+              <a href="https://github.com/AntreasDrk/Portfolio/tree/main/My-Projects/PortofolioProjects/Calculator" class="view-code btn" target="_blank">View Code</a>
+            </div>
+          </div>
+          <!-- NETFLIX CLONE -->
+          <div class="projects-tabs">
+            <div class="project-image-container">
+              <img src="assets/images/netflixClone.png" alt="netflix Clone project" loading="lazy" class="image-proj" />
+            </div>
+            <div class="project-description-title">
+              <h3 class="text description-title">NetflixClone Project</h3>
+            </div>
+            <div class="description-text text">Here trying to re-create a NetflixClone.</div>
+            <div class="view-project">
+              <a href="My-Projects/PortofolioProjects/NetflixClone/index.html" class="view-project btn" target="_blank">View Project</a>
+              <a href="https://github.com/AntreasDrk/Portfolio/tree/main/My-Projects/PortofolioProjects/NetflixClone" class="view-code btn" target="_blank">View Code</a>
+            </div>
+          </div>
+          <!-- SIGN UP FORM -->
+          <div class="projects-tabs">
+            <div class="project-image-container">
+              <img src="assets/images/signUpForm.png" alt="sign Up Format project" loading="lazy" class="image-proj" />
+            </div>
+            <div class="project-description-title">
+              <h3 class="text description-title">SignUpForm Project</h3>
+            </div>
+            <div class="description-text text">A simple form with CSS/JS.</div>
+            <div class="view-project">
+              <a href="My-Projects/PortofolioProjects/Sign in Formats/index.html" class="view-project btn" target="_blank">View Project</a>
+              <a href="https://github.com/AntreasDrk/Portfolio/tree/main/My-Projects/PortofolioProjects/Sign%20in%20Formats" class="view-code btn" target="_blank">View Code</a>
             </div>
           </div>
       </div>
@@ -237,7 +278,7 @@
     <div class="seperator"></div>
     <!-- Contact Me -->
     <section id="contact-me">
-      <div class="contact-me-section-container">
+      <div class="contact-me-section-container unselectable">
         <div class="contact-me-items">
           <h2 class="text projects-title">Contact Me</h2>
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="icon-mark bi bi-terminal" viewBox="0 0 16 16">
@@ -303,5 +344,6 @@
         <p class="text footer-text" alt="footer">Antreas Drakopoulos© 2023</p>
       </footer>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>
