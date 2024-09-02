@@ -1,0 +1,197 @@
+body {
+  background-color: #181717;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+#container {
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 650px;
+}
+
+h1 {
+  color: white;
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+.text-inform {
+  color: gray;
+  margin-left: 20px;
+}
+
+h4 {
+  width: 216%;
+  margin: .7em auto;
+  overflow: hidden;
+  font-weight:300;
+  color: rgb(102, 101, 101);
+}
+h4:before, h4:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+h4:after {
+  margin: 0 -55% 0 .5em;
+}
+
+.profile-icon {
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.input-div {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-field {
+  width: 300px;
+  height: 30px;
+  margin-top: 40px;
+  margin-left: 20px;
+  background-color: rgb(110, 107, 107);
+  color: white;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-top: 5px;
+  font-size: 18px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.8;
+  font-size: 1.3vw;;
+}
+
+.kids-div {
+  margin-top: 40px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.checkbox {
+  margin-top: 3px;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  border: 1px solid gray;;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  appearance: auto;
+  accent-color: white;
+  background: transparent;
+}
+
+#kids-checkbox-text {
+  margin-top: 5px;
+  margin-left: 5px;
+  color: rgb(236, 234, 234);
+  font-size: 18px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: rgb(221, 221, 127);
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -110px;
+  text-decoration: none;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.buttons-div {
+  margin-top: 30px;
+}
+
+.continue-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px 22px;
+  font-size: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: background-color, color 0.15s;
+}
+
+.continue-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.cancel-btn {
+  background: transparent;
+  border: 1px solid gray;
+  color: gray;
+  font-size: 18px;
+  padding: 7px 20px;
+  cursor: pointer;
+  transition: border, color 0.15s;
+}
+
+.cancel-btn:hover {
+  border: 1px solid white;
+  color: white;
+}
+
+span.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
+  font-size: 18px;
+  color: gray;
+  padding: 7px 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+  border-radius: none;
+  background-color: transparent;
+  transition: border, color 0.15s;
+}
+
+span.button:hover {
+  border: 1px solid white;
+  color: white;
+}

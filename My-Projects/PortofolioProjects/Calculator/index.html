@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <main>
+      <section id="calc">
+        <div id="main-frame">
+          <div id="calc-brand">Calculator</div>
+          <div id="display"></div>
+          <div id="calc-buttons">
+            <div id="calc-container">
+              <button class="grid-item percent-button btn">%</button>
+              <button class="grid-item ce-button btn">CE</button>
+              <button class="grid-item clear btn" data-clear="C">C</button>
+              <button class="grid-item del-button btn">DEL</button>
+              <button class="grid-item">?</button>
+              <button class="grid-item">??</button>
+              <button class="grid-item">???</button>
+              <button class="grid-item operator btn" data-operator="/">
+                /
+              </button>
+              <button class="grid-item btn-number btn" data-number="7">
+                7
+              </button>
+              <button class="grid-item btn-number btn" data-number="8">
+                8
+              </button>
+              <button class="grid-item btn-number btn" data-number="9">
+                9
+              </button>
+              <button class="grid-item operator btn" data-operator="*">
+                X
+              </button>
+              <button class="grid-item btn-number btn" data-number="4">
+                4
+              </button>
+              <button class="grid-item btn-number btn" data-number="5">
+                5
+              </button>
+              <button class="grid-item btn-number btn" data-number="6">
+                6
+              </button>
+              <button class="grid-item operator btn" data-operator="-">
+                -
+              </button>
+              <button class="grid-item btn-number btn" data-number="1">
+                1
+              </button>
+              <button class="grid-item btn-number btn" data-number="2">
+                2
+              </button>
+              <button class="grid-item btn-number btn" data-number="3">
+                3
+              </button>
+              <button class="grid-item operator btn" data-operator="+">
+                +
+              </button>
+              <button class="grid-item">+/-</button>
+              <button class="grid-item btn-number btn" data-number="0">
+                0
+              </button>
+              <button class="grid-item comma-button btn">.</button>
+              <button class="grid-item equals btn" data-equals="=">=</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/service-worker.js")
+          .then((registration) => {
+            console.log(
+              "ServiceWorker registration successful with scope: ",
+              registration.scope
+            );
+          })
+          .catch((error) => {
+            console.log("ServiceWorker registration failed: ", error);
+          });
+      }
+    </script>
+  </body>
+</html>

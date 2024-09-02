@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My_book's</title>
+    <link rel="stylesheet" href="/book_collection/book_collection.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+    <div class="button-container">
+      <button class="mark-btn field-btn">Mark</button>
+      <button class="add-btn field-btn">Add</button>
+    </div>
+    <section id="content">
+      <div class="content-container container-fluid no-margin-padding text-center">
+        <div class="row no-margin-padding">
+          <div class="filters col-sm-2 no-margin-padding">
+            <h3 class="text-start no-margin-padding">Filters</h3>
+            <hr />
+            <div class="tags text-start no-margin-padding">
+              <h6>Tags</h6>
+              <hr />
+            </div>
+            <div class="sort text-start no-margin-padding">
+              <h6>Sort by</h6>
+              <hr />
+              <ul class="checkbox-list text-start no-margin-padding">
+                <li class="text-start no-margin-padding"><input type="checkbox" />Latest</li>
+                <li class="text-start no-margin-padding"><input type="checkbox" />Oldest</li>
+                <li class="text-start no-margin-padding"><input type="checkbox" />Author Name</li>
+                <li class="text-start no-margin-padding"><input type="checkbox" />Release Date</li>
+                <li class="text-start no-margin-padding"><input type="checkbox" />Book Title</li>
+              </ul>
+
+              <a href="#my-notes" class="text-start no-margin-padding">My Notes</a>
+              <span class="notes-counter"> 0 </span>
+              <hr />
+            </div>
+          </div>
+          <div class="list-items col-sm-10 no-margin-padding">
+            <h3 class="text-start no-margin-padding">List</h3>
+            <hr />
+            <div id="table-container">
+              <table class="table">
+                <thead>
+                  <tr class="tableList">
+                    <th class="header field cover" alt="cover">
+                      <a href="#cover">cover</a>
+                    </th>
+                    <th class="header field title" alt="title">
+                      <a href="#title">title</a>
+                    </th>
+                    <th class="header field author" alt="author">
+                      <a href="#author">author</a>
+                    </th>
+                    <th class="header field notes" alt="notes">
+                      <a href="#notes">notes</a>
+                    </th>
+                    <th class="header field year" alt="year">
+                      <a href="#year">year</a>
+                    </th>
+                    <th class="header field date-added" alt="date-added">
+                      <a href="#date-added">date added</a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="book review">
+                    <td class="field cover-data">
+                      <label style="display: none">cover</label>
+                      <div class="value cover-value">
+                        <a href="#bookCover">
+                          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1476910723l/32708007._SX50_.jpg" />
+                        </a>
+                        <section></section>
+                      </div>
+                    </td>
+                    <td class="field title-data">
+                      <label style="display: none">title</label>
+                      <div class="value">
+                        <a title="Kimetsu no Yaiba" href="#title">[Kimetsu no Yaiba]</a>
+                      </div>
+                    </td>
+                    <td class="field author-data">
+                      <label style="display: none">author</label>
+                      <div class="value">
+                        <a href="#bookAuthor">Gotouge, Koyoharu</a>
+                      </div>
+                    </td>
+                    <td class="field notes-data">
+                      <label style="display: none">notes</label>
+                      <div class="value">
+                        <a href="#bookAuthor">Write your notes.</a>
+                      </div>
+                    </td>
+                    <td class="field year-data">
+                      <label style="display: none">year</label>
+                      <div class="value">
+                        <span title="Jul 25, 2018">Jul 25, 2018</span>
+                      </div>
+                    </td>
+                    <td class="field date-added-data">
+                      <label style="display: none">date added</label>
+                      <div class="value">
+                        <a href="#bookAuthor">Jul 25, 2018</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/book_collection/book_collection.js"></script>
+  </body>
+</html>

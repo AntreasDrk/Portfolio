@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Setflix</title>
+    <link rel="stylesheet" href="accountChoice.css" />
+  </head>
+  <body>
+    <div id="container">
+      <p class="title">Who's watching?</p>
+      <div class="profiles-list">
+        <ul>
+          <li>
+            <div class="wrapper">
+              <div class="profile-pic">
+                <a href="#"
+                  ><img src="profile-picture.jpeg" class="profile-image" />
+                  <span class="user-name">Antreas</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper">
+              <div class="profile-pic">
+                <a href="#"
+                  ><img src="user-icon.jpg" class="profile-image" />
+                  <span class="user-name">George</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper">
+              <div class="profile-pic">
+                <a href="#"
+                  ><img src="kids-icon.jpg" class="profile-image" />
+                  <span class="user-name">Kids</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper">
+              <div class="profile-pic" id="add-user">
+                <span onclick="transitionToPage('addProfile.html')" id="profile-link">
+                  <img src="add.png" class="profile-image" id="add-user-icon" />
+                  <span class="user-name">Add Profile</span>
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="manage-profiles-button-div">
+        <div>
+          <a href="#" class="button">Manage Profiles</a>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

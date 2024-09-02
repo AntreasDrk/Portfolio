@@ -1,0 +1,64 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-div {
+  z-index: 2;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column;
+}
+
+.logo {
+  width: 750px;
+  height: 350px;
+  margin-bottom: 40px;
+}
+.logo > img {
+  width: 65%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(25%, 60%);
+}
+
+a.watch-btn {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  background-color: #E50914;
+  color: white;
+  border: none;
+  padding: 15px 45px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-image 0.15s;
+}
+
+.watch-btn:hover {
+  background-image: url('/NetflixClone/netflix-reuse-official.jpg');
+}
+
+#support-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+ul li {
+  margin-bottom: 2px;
+}
+a {
+  color: #E50914;
+  font-size: 12px;
+}

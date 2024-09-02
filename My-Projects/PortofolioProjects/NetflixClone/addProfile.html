@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="addProfile.css">
+    <title>Add Profile</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="wrapper">
+        <h1>Add Profile</h1>
+        <form>
+          <div>
+            <p class="text-inform">Add a profile for another person watching Netflix.</p>
+          </div>
+          <h4></h4>
+          <div class="input-div">
+            <img src="user-icon.jpg" class="profile-icon">
+            <input type="text" name="UserName" placeholder="Name" class="input-field"> 
+            <div class="kids-div">
+              <input type="checkbox" class="checkbox">
+              <p id="kids-checkbox-text" class="tooltip">Kid?
+                <span class="tooltiptext">If selected, this profile will only see TV
+                  shows and movies rated for ages 12 and under.
+                </span>
+              </p>
+            </div>
+          </div>
+          <h4></h4>
+          <div class="buttons-div">
+            <button class="continue-btn">Continue</button>
+            <span onclick="transitionToPage('accountChoice.html')" class="button">Cancel</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="addProfile.js"></script>
+  </body>
+</html>
