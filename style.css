@@ -110,18 +110,21 @@ h2 {
 
 /* Arrow animation */
 .arrow {
-  cursor: pointer;
   width: 220px;
   height: 50px;
   margin-top: 20px; /* Adjust spacing from the text above */
-  animation: mymove 1.5s infinite;
+  animation: moveArrow 1.5s infinite;
   position: absolute; /* Absolute positioning */
   bottom: 20px; /* Distance from the bottom */
   left: 45%; /* Center horizontally */
   transform: translateX(-45%); /* Center horizontally */
 }
 
-@keyframes mymove {
+.arrow img:hover {
+  cursor: pointer;
+}
+
+@keyframes moveArrow {
   0%,
   20%,
   50%,
