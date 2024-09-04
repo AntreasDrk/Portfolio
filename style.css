@@ -164,9 +164,13 @@ h2 {
   background-color: rgba(134, 134, 134, 0.356); /* 50% opacity background */
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.459);
+  box-shadow: 0px 1px 20px 2px rgba(0, 0, 0, 0.603);
+  transition: box-shadow 0.3s;
 }
 
+.skillset-container:hover {
+  box-shadow: 0px 1px 20px 2px rgb(229, 126, 35);
+}
 .skills-title {
   font-size: 3rem;
   margin-bottom: 5px;
@@ -209,6 +213,18 @@ h2 {
 /* TODO Should make this into a flexbox that contains all the elements going downwards */
 .projects-container {
   margin-bottom: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  background-color: rgba(134, 134, 134, 0.212); /* 50% opacity background */
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 1px 20px 2px rgba(0, 0, 0, 0.603);
+  transition: box-shadow 0.3s;
+}
+
+.projects-container:hover {
+  box-shadow: 0px 1px 20px 2px rgb(229, 126, 35);
 }
 
 .projects-title {
@@ -233,8 +249,12 @@ h2 {
   margin-bottom: 40px;
 }
 
+.personal-projects {
+  margin-top: 50px;
+}
+
 .my-projects-text {
-  margin-top: 25px;
+  /* margin-top: 25px; */
   margin-right: 50px;
   text-align: left;
 }
@@ -245,7 +265,7 @@ h2 {
   justify-content: space-between;
   width: 95%;
   margin-left: 50px;
-  margin-top: 75px;
+  margin-top: 10px;
   margin-bottom: 25px;
 }
 
@@ -274,18 +294,20 @@ h2 {
 .projects-tabs {
   border: 4px solid #05939b;
   background-color: #05939b;
-  border-radius: 8px;
+  border-radius: 10px;
   max-width: 300px;
   height: 420px;
-  transition: scale 0.3s;
+  box-shadow: 0px 1px 20px 2px rgba(0, 0, 0, 0.603);
+  transition: scale 0.3s, box-shadow 0.2s;
 }
 
 .projects-tabs:hover {
   scale: 1.1;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.459);
 }
 
 .image-proj {
-  border-radius: 8px;
+  border-radius: 6px;
   max-width: 300px;
   height: 300px;
   margin-bottom: 0;
