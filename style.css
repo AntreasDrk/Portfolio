@@ -107,19 +107,19 @@ a:hover {
   color: #e57c23;
 }
 
-.welcome-msg {
+/* .welcome-msg {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; /* Center text horizontally */
+  text-align: center; 
 }
 
 #profile-pic {
   background-color: #222831;
   height: 270px;
   width: 270px;
-  border-radius: 50%; /* Make it a circle */
+  border-radius: 50%; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +130,7 @@ a:hover {
   height: 250px;
   width: 250px;
   object-fit: cover;
-  border-radius: 50%; /* Ensure the image fits the circle */
+  border-radius: 50%; 
 }
 
 h1 {
@@ -139,7 +139,7 @@ h1 {
   border-radius: 8px;
   font-style: italic;
   font-size: 4rem;
-  margin: -15px 0; /* Adjust margins */
+  margin: -15px 0; 
   padding: 0 10px;
   z-index: 1;
 }
@@ -159,7 +159,7 @@ h2 {
   background-color: #222831;
   color: #e57c23;
   padding: 10px;
-}
+} */
 
 /* Arrow animation */
 .arrow {
