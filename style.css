@@ -161,6 +161,31 @@ h2 {
   padding: 10px;
 } */
 
+/* INTRODUCTION */
+.message-container {
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+/* introduction div */
+.introduction {
+  margin: 0;
+}
+
+/* h1 el */
+.name-intro {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* h3 el */
+.overall-intro {
+  font-size: 1.5rem;
+  max-width: 850px;
+}
+
 /* Arrow animation */
 .arrow {
   width: 220px;
@@ -192,6 +217,8 @@ h2 {
     transform: translateY(-5px);
   }
 }
+
+/* END OF LANDING PAGE */
 
 #my-skillset {
   display: flex;
