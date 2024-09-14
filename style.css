@@ -180,6 +180,17 @@ h2 {
   margin: 0;
 }
 
+@keyframes introText {
+  0%,
+  5% {
+    opacity: 0;
+  }
+  10%,
+  100% {
+    opacity: 1;
+  }
+}
+
 /* h3 el */
 .overall-intro {
   font-size: 1.5rem;
