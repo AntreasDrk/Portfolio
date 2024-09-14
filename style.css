@@ -186,6 +186,21 @@ h2 {
   max-width: 850px;
 }
 
+.projects-btn {
+  margin: 0px;
+  padding: 10px 25px 10px 25px;
+  font-weight: bold;
+  color: black;
+  background-color: #e57c23;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.projects-btn:hover {
+  background-color: #00adb5;
+  color: black;
+}
+
 /* Arrow animation */
 .arrow {
   width: 220px;
@@ -194,7 +209,7 @@ h2 {
   animation: moveArrow 1.5s infinite;
   position: absolute; /* Absolute positioning */
   bottom: 20px; /* Distance from the bottom */
-  left: 45%; /* Center horizontally */
+  left: 48%; /* Center horizontally */
   transform: translateX(-45%); /* Center horizontally */
 }
 
