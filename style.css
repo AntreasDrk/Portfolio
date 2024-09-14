@@ -184,15 +184,17 @@ h2 {
 .overall-intro {
   font-size: 1.5rem;
   max-width: 850px;
+  margin-bottom: 50px;
 }
 
 .projects-btn {
   margin: 0px;
-  padding: 10px 25px 10px 25px;
+  padding: 10px 45px 10px 45px;
   font-weight: bold;
   color: black;
   background-color: #e57c23;
   border: none;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.603);
   transition: background-color 0.3s ease-in-out;
 }
 
