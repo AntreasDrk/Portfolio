@@ -384,6 +384,8 @@ h2 {
 .projects-tabs-container {
   display: grid;
   justify-content: space-evenly;
+  margin-left: 50px;
+  padding-bottom: 25px;
   gap: 30px;
   grid-template-rows: auto; /* Rows that size to fit content */
   grid-template-columns: repeat(3, 1fr); /* 4 columns */
