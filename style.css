@@ -419,11 +419,25 @@ h2 {
   }
 }
 
-@media (max-width: 600px) {
-  .projects-tabs {
-    height: auto; /* Allow height to adjust automatically */
+/* Media query for screens 360px to 414px wide (mobile portrait) */
+@media (min-width: 360px) and (max-width: 414px) {
+  .projects-tabs-container {
+    grid-template-columns: 1fr; /* 1 column on mobile phones */
   }
 }
+
+/* Media query for screens 640px to 896px high (mobile landscape or large devices) */
+@media (min-height: 640px) and (max-height: 896px) {
+  .projects-tabs-container {
+    grid-template-columns: 1fr; /* Adjust the layout based on screen height */
+  }
+}
+
+/* @media (max-width: 600px) {
+  .projects-tabs {
+    height: auto; 
+  }
+} */
 
 .image-proj {
   border-radius: 6px;
