@@ -107,6 +107,10 @@ a:hover {
   color: #e57c23;
 }
 
+.dropdown {
+  opacity: 0;
+}
+
 /* .welcome-msg {
   display: flex;
   flex-direction: column;
@@ -421,6 +425,75 @@ h2 {
 
 /* Media query for screens 360px to 414px wide (mobile portrait) */
 @media (min-width: 360px) and (max-width: 414px) {
+  /* Repsonsiveness for main page */
+  #nav-elements li {
+    display: none;
+  }
+
+  .logo-container {
+    width: 100%; /* Adjust to your needs */
+    justify-content: flex-start;
+  }
+
+  /* new bellow */
+
+  .dropdown {
+    margin-left: 30px;
+    float: left;
+    overflow: hidden;
+    opacity: 1;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: #05939b;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eeeeee;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* new above */
+  .name-intro {
+    font-size: 2.8rem;
+    margin-left: -30px;
+  }
+
+  .overall-intro {
+    font-size: 1.2rem;
+    max-width: 300px;
+    padding: 1rem;
+  }
+
+  /* Repsonsiveness for projects page */
   .projects-tabs-container {
     grid-template-columns: 1fr; /* 1 column on mobile phones */
     margin-left: -5px;
