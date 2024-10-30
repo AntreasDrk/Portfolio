@@ -423,6 +423,28 @@ h2 {
 @media (min-width: 360px) and (max-width: 414px) {
   .projects-tabs-container {
     grid-template-columns: 1fr; /* 1 column on mobile phones */
+    margin-left: -5px;
+  }
+
+  .projects-title {
+    margin-left: -5px;
+  }
+
+  .projects-info-title {
+    margin-left: -5px;
+  }
+
+  .projects-info-paragraph {
+    margin-left: -5px;
+  }
+
+  .projects-container {
+    margin: 10px 10px 10px 10px;
+    background-color: rgba(134, 134, 134, 0.212); /* 50% opacity background */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 1px 20px 2px rgba(0, 0, 0, 0.603);
+    transition: box-shadow 0.3s;
   }
 }
 
