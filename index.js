@@ -11,7 +11,7 @@ function animatedText() {
   // h1 el
   document.querySelector(".name-intro").innerHTML = $html;
   document.querySelector(".name-intro").style.color = "black";
-  document.querySelector(".name-intro").style.fontSize = "4rem";
+  // document.querySelector(".name-intro").style.fontSize = "4rem";
 
   //TODO Find a way to make the subtext animated as well
   // h3 el
