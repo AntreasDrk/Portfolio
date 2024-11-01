@@ -435,6 +435,11 @@ h2 {
   #header {
     height: 100dvh;
   }
+
+  #nav-elements {
+    padding: 20px;
+  }
+
   #nav-elements li {
     display: none;
   }
