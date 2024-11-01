@@ -23,11 +23,11 @@ body {
   background: url("./assets/images/headerBackground.jpg") no-repeat center center/cover;
   margin-bottom: 50px;
   height: 100vh;
-  display: flex; /* Enable Flexbox */
-  flex-direction: column; /* Arrange children vertically */
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  position: relative; /* Set relative positioning for child absolute positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .nav-bar {
@@ -357,7 +357,6 @@ h2 {
 }
 
 .my-projects-text {
-  /* margin-top: 25px; */
   margin-right: 50px;
   text-align: left;
 }
@@ -376,12 +375,12 @@ h2 {
   content: "";
   flex-grow: 1;
   border-bottom: 1px solid #e57c23;
-  margin-left: 10px; /* Spacing between line and text */
+  margin-left: 10px;
 }
 
 .seperator-with-text p {
   margin: 0;
-  white-space: nowrap; /* Prevent text from wrapping */
+  white-space: nowrap;
 }
 
 /* TODO make the grid better, maybe change the project tabs into a slider? */
@@ -521,19 +520,6 @@ h2 {
   }
 }
 
-/* Media query for screens 640px to 896px high (mobile landscape or large devices) */
-@media (min-height: 640px) and (max-height: 896px) {
-  .projects-tabs-container {
-    grid-template-columns: 1fr; /* Adjust the layout based on screen height */
-  }
-}
-
-/* @media (max-width: 600px) {
-  .projects-tabs {
-    height: auto; 
-  }
-} */
-
 .image-proj {
   border-radius: 6px;
   max-width: 300px;
@@ -586,6 +572,13 @@ h2 {
 .contact-me-section-container {
   display: flex;
   flex-direction: row;
+}
+
+.contact-me-title {
+  font-size: 3rem;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  display: inline-block;
 }
 
 .contact-me-items {
