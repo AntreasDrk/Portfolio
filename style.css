@@ -108,7 +108,11 @@ a:hover {
 }
 
 .dropdown {
-  opacity: 0;
+  display: none;
+}
+
+.social-media-container {
+  display: none;
 }
 
 /* .welcome-msg {
@@ -430,7 +434,7 @@ h2 {
 }
 
 /* Media query for screens 360px to 414px wide (mobile portrait) */
-@media (min-width: 300px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 414px) {
   /* Repsonsiveness for main page */
   #header {
     height: 100dvh;
@@ -454,7 +458,7 @@ h2 {
   .dropdown {
     float: left;
     overflow: hidden;
-    opacity: 1;
+    display: initial;
   }
 
   .dropdown .dropbtn {
@@ -500,6 +504,49 @@ h2 {
     font-size: 1.2rem;
     max-width: 300px;
     padding: 1rem;
+  }
+
+  .social-media-container {
+    display: inline-block; /* Changed from initial to inline-block */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    background-color: #00adb5;
+    width: 75px;
+    height: 75px;
+    border-radius: 37px;
+    opacity: 1;
+    transition: width 0.3s ease; /* Added smooth transition */
+    overflow: hidden;
+  }
+
+  .social-media-container:hover,
+  .social-media-container:active {
+    width: 310px;
+    /* background-color: rgba(0, 0, 0, 0); */
+  }
+
+  .social-media-expand-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 0;
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+
+  .social-media-container:hover .social-media-expand-btn,
+  .social-media-container:active .social-media-expand-btn {
+    opacity: 1; /* Show icons on hover or click */
+  }
+
+  .social-media-icon {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
   }
 
   /* Repsonsiveness for projects page */
