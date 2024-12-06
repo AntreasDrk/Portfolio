@@ -21,3 +21,15 @@ function animatedText() {
 }
 
 animatedText();
+
+// // Select the container
+// const container = document.querySelector(".social-media-container");
+
+// // Add click event listener
+// container.addEventListener("click", (event) => {
+//   // Ensure clicks only work when on the container, not margins or links
+//   if (event.target === container || event.target.closest(".social-media-icon")) {
+//     event.preventDefault(); // Prevent default anchor behavior
+//     container.classList.toggle("expanded"); // Toggle 'expanded' class
+//   }
+// });
